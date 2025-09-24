@@ -18,7 +18,7 @@ FAccelByteVoiceChat::~FAccelByteVoiceChat()
 {
 	for (auto ItRemove = LocalVoiceChatUsers.CreateIterator(); ItRemove; ++ItRemove)
 	{
-		ReleaseUser(ItRemove->Value.Get());
+		FAccelByteVoiceChat::ReleaseUser(ItRemove->Value.Get());
 	}
 	LocalVoiceChatUsers.Reset();
 	VoiceChatUserPtr.Reset();

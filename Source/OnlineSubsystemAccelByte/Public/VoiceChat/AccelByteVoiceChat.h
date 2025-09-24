@@ -16,7 +16,7 @@ class ONLINESUBSYSTEMACCELBYTE_API FAccelByteVoiceChat
 {
 PACKAGE_SCOPE:
 	FAccelByteVoiceChat(FOnlineSubsystemAccelByte* InSubsystem);
-	~FAccelByteVoiceChat() override;
+	virtual ~FAccelByteVoiceChat() override;
 public:
 	bool Initialize(IVoiceChatPtr InVoiceChat);
 	IVoiceChatUser* GetVoiceChatUser(const FUniqueNetId& LocalUserId);
